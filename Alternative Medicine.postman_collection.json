@@ -1,0 +1,578 @@
+{
+	"info": {
+		"_postman_id": "030f012b-5749-4596-a0da-02f220b6dd4c",
+		"name": "Alternative Medicine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27480069"
+	},
+	"item": [
+		{
+			"name": "Pharmacy",
+			"item": [
+				{
+					"name": "add pharmacy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Al-Hikma Pharmacy\",\r\n  \"address\": \"Amman, Al-Madina Street\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pharmacies/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update pharmacy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Al Shifa Pharmacy - Updated\",\r\n  \"address\": \"Ramallah - New Address\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pharmacies/update/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "685abeeab81b5e22f2094faa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all pharmacies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/pharmacies?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "no. pages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/pharmacies/pages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies",
+								"pages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pharmacy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/pharmacies/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "685abeeab81b5e22f2094faa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1Mjc3MjN9.Fs8XD3J60Py5z6VVLWk5JfKS_7W2tiNg7nCmXdduAsg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Al Shifa Pharmacy - Updated\",\r\n  \"address\": \"Ramallah - New Address\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pharmacies/delete/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pharmacies",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "685abeeab81b5e22f2094faa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"AdminPassword123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1NzcxMTl9.GR05TeInZ74OGbAmCTVSH503htz2yWfyCIKt-1XWA-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drug",
+			"item": [
+				{
+					"name": "add drug",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1NzcxMTl9.GR05TeInZ74OGbAmCTVSH503htz2yWfyCIKt-1XWA-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Panda\",\r\n  \"type\": \"tablet\",\r\n  \"manufacturer\": \"Some Manufacturer\",\r\n  \"isAvailable\": true,\r\n  \"note\": \"Available alternative\",\r\n  \"alternative_of\": \"6857c8e1d9a731a5480948ab\", \r\n  \"pharmacies\": [\"6857c8a633d2d88f7d18faeb\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/drugs/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"drugs",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get drugs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1NzcxMTl9.GR05TeInZ74OGbAmCTVSH503htz2yWfyCIKt-1XWA-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/drugs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"drugs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update drug",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1NzcxMTl9.GR05TeInZ74OGbAmCTVSH503htz2yWfyCIKt-1XWA-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Paracetamol Updated\",\r\n  \"type\": \"Tablet\",\r\n  \"manufacturer\": \"Acme Pharma Ltd\",\r\n  \"isAvailable\": false,\r\n  \"note\": \"Currently out of stock\",\r\n  \"alternative_of\": null,\r\n  \"pharmacies\": []\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:5000/drugs/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"drugs",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6857c786d9a731a5480948a9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete drugs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1NzcxMTl9.GR05TeInZ74OGbAmCTVSH503htz2yWfyCIKt-1XWA-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Paracetamol\",\r\n  \"type\": \"Tablet\",\r\n  \"manufacturer\": \"Acme Pharma\",\r\n  \"isAvailable\": true,\r\n  \"note\": \"Common painkiller\",\r\n  \"alternative_of\": null,\r\n  \"pharmacies\": [\"6857af789dca610b7071fb49\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/drugs/delete/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"drugs",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6857c786d9a731a5480948a9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODUxNmE5NDEyNWZlMGI3MzJkNDkyNTciLCJpYXQiOjE3NTA1ODgwMjZ9.w2qMx0iCOMhHLbyEQ4vUmBhOgeODDsSc2tIlw9658Kc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/drugs/byName?name=Declofinde acmole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"drugs",
+								"byName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Declofinde acmole"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
