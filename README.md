@@ -128,7 +128,6 @@ JWT_PRIVATE_KEY=your_jwt_secret_key
 ---
 
 ## Running the Project
-The server runs by default on http://localhost:5000
 
 ### Start Server (Development)
 ```bash
