@@ -5,18 +5,18 @@ A Node.js RESTful API designed to manage and provide access to alternative medic
 ---
 
 ## 📘 Table of Contents
-1. 🧪 [Overview](#overview)
-2. 📌 [Project Scope](#project-scope)
-3. ⚡ [Features](#features)
-4. 🗂️ [Project Structure](#project-structure)
-5. 🛠️ [Tech Stack](#tech-stack)
-6. 💻 [Installation](#installation)
-7. 🔑 [Environment Variables](#environment-variables)
-8. 🚀 [Running the Project](#running-the-project)
-9. 📬 [API Routes (Postman Collection)](#api-routes-postman-collection)
-10. ⚙️ [Scripts](#scripts)
-11. 📝 [License](#license)
-12. ℹ️ [Project Info](#project-info)
+1. [🧪 Overview](#%F0%9F%A7%AA-overview)
+2. [📌 Project Scope](#%F0%9F%93%8C-project-scope)
+3. [⚡ Features](#%E2%9A%A1-features)
+4. [🗂️ Project Structure](#%F0%9F%97%82%EF%B8%8F-project-structure)
+5. [🛠️ Tech Stack](#%F0%9F%9B%B0%EF%B8%8F-tech-stack)
+6. [💻 Installation](#%F0%9F%92%BB-installation)
+7. [🔑 Environment Variables](#%F0%9F%94%91-environment-variables)
+8. [🚀 Running the Project](#%F0%9F%9A%80-running-the-project)
+9. [📬 API Routes (Postman Collection)](#%F0%9F%93%AC-api-routes-postman-collection)
+10. [⚙️ Scripts](#%E2%9A%99%EF%B8%8F-scripts)
+11. [📝 License](#%F0%9F%93%9D-license)
+12. [ℹ️ Project Info](#%E2%84%B9%EF%B8%8F-project-info)
 
 ---
 
