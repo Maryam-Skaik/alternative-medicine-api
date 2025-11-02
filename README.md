@@ -5,28 +5,29 @@ A Node.js RESTful API designed to manage and provide access to alternative medic
 ---
 
 ## 📘 Table of Contents
-1. [Overview](#overview)
-2. [Project Scope](#project-scope)
-3. [Features](#features)
-4. [Project Structure](#project-structure)
-5. [Tech Stack](#tech-stack)
-6. [Installation](#installation)
-7. [Environment Variables](#environment-variables)
-8. [Running the Project](#running-the-project)
-9. [API Routes (Postman Collection)](#api-routes-postman-collection)
-10. [Scripts](#scripts)
-11. [License](#license)
+1. 🧪 [Overview](#overview)
+2. 📌 [Project Scope](#project-scope)
+3. ⚡ [Features](#features)
+4. 🗂️ [Project Structure](#project-structure)
+5. 🛠️ [Tech Stack](#tech-stack)
+6. 💻 [Installation](#installation)
+7. 🔑 [Environment Variables](#environment-variables)
+8. 🚀 [Running the Project](#running-the-project)
+9. 📬 [API Routes (Postman Collection)](#api-routes-postman-collection)
+10. ⚙️ [Scripts](#scripts)
+11. 📝 [License](#license)
+12. ℹ️ [Project Info](#project-info)
 
 ---
 
-## Overview
+## 🧪 Overview
 
 The **Alternative Medicine API** provides endpoints for managing drug and pharmacy information.  
 It allows a single administrator to securely manage drugs, pharmacies, and alternative medicines for unavailable drugs.
 
 ---
 
-## Project Scope
+## 📌 Project Scope
 
 - Backend API only, no frontend.
 - Single administrator manages the platform.
@@ -37,7 +38,7 @@ It allows a single administrator to securely manage drugs, pharmacies, and alter
 
 ---
 
-## Features
+## ⚡ Features
 
 - Single admin user authentication (login/logout) using JWT.
 - CRUD endpoints for drugs and pharmacies with alternative medicine mapping.
@@ -47,7 +48,7 @@ It allows a single administrator to securely manage drugs, pharmacies, and alter
 - Modular architecture for easy scalability.
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```text
 alternative-medicine-api/
@@ -90,7 +91,7 @@ alternative-medicine-api/
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 - **Node.js**
 - **Express.js**
 - **MongoDB / Mongoose**
@@ -100,7 +101,7 @@ alternative-medicine-api/
 
 ---
 
-## Installation
+## 💻 Installation
 
 ### 1. Clone the repository
 ```bash
@@ -115,7 +116,7 @@ npm install
 
 ---
 
-## Environment Variables
+## 🔑 Environment Variables
 
 Create a `.env` file in the root directory with the following keys:
 ```bash
@@ -124,7 +125,9 @@ MONGO_URI=mongodb://localhost:27017/alternative-medicine
 JWT_PRIVATE_KEY=your_jwt_secret_key
 ```
 
-## Running the Project
+---
+
+## 🚀 Running the Project
 The server runs by default on http://localhost:5000
 
 ### Start Server (Development)
@@ -134,7 +137,7 @@ npm start
 
 The server runs by default on http://localhost:5000
 
-## API Routes (Postman Collection)
+---
 
 ## 📬 API Routes (Postman Collection)
 
@@ -163,6 +166,7 @@ The server runs by default on http://localhost:5000
 | DELETE | /drugs/delete/:id             | Delete drug by ID            | Yes           |
 | GET    | /drugs/byName?name=DrugName   | Get drug by name             | Yes           |
 
+---
 
 ## 📬 Example Postman Collection
 
@@ -179,7 +183,7 @@ You can test all API endpoints using the provided Postman collection.
 
 ---
 
-## Scripts
+## ⚙️ Scripts
 
 | Command   | Description                        |
 |-----------|------------------------------------|
@@ -187,12 +191,14 @@ You can test all API endpoints using the provided Postman collection.
 
 ---
 
-## License
+## 📝 License
 
 This project is open-source and available under the MIT License
 
 ---
 
-Author: Maryam Skaik
-Version: 1.0.0
-Status: Development Complete 🚀
+## ℹ️ Project Info
+
+**Author: Maryam Skaik**
+**Version:** 1.0.0
+**Status:** Development Complete 🚀
