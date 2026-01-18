@@ -1,4 +1,3 @@
-
 # 🧪 Alternative Medicine API
 A Node.js RESTful API designed to manage and provide access to alternative medicine data including drugs, pharmacies, and user authentication. Built with **Express.js**, **MongoDB**, and **JWT** authentication.
 
@@ -27,6 +26,13 @@ It allows a single administrator to securely manage drugs, pharmacies, and alter
 
 ---
 
+## 📌 Repository Purpose
+
+This repository provides a secure and scalable backend API for managing drugs, pharmacies, and alternative medicines.  
+It demonstrates best practices in REST API design, authentication, and modular Node.js architecture suitable for educational and real-world applications.
+
+---
+
 ## Project Scope
 
 - Backend API only, no frontend.
@@ -38,6 +44,14 @@ It allows a single administrator to securely manage drugs, pharmacies, and alter
 
 ---
 
+## 👥 Who This Is For
+
+- Backend developers learning REST API design with Node.js  
+- Students exploring secure authentication with JWT  
+- Developers managing CRUD operations and relational/alternative mappings
+
+---
+
 ## Features
 
 - Single admin user authentication (login/logout) using JWT.
@@ -46,6 +60,15 @@ It allows a single administrator to securely manage drugs, pharmacies, and alter
 - MongoDB database integration.
 - Centralized validation and error handling.
 - Modular architecture for easy scalability.
+---
+
+## 🔐 Security & Validation Notes
+
+- Admin authentication is secured via JWT with private keys.  
+- Passwords are hashed using bcryptjs.  
+- Input validation is centralized for drugs, pharmacies, and users to prevent injection and invalid data.  
+- Modular structure separates controllers, routes, and models for maintainability.
+
 ---
 
 ## Project Structure
@@ -134,7 +157,7 @@ JWT_PRIVATE_KEY=your_jwt_secret_key
 npm start
 ```
 
-The server runs by default on http://localhost:5000
+The server runs by default on http://localhost:3000
 
 ---
 
@@ -177,7 +200,7 @@ You can test all API endpoints using the provided Postman collection.
 1. Download or clone the repo.
 2. Open Postman.
 3. Import the collection file.
-4. Replace `{{base_url}}` with your server URL (e.g., `http://localhost:5000`).
+4. Replace `{{base_url}}` with your server URL (e.g., `http://localhost:3000`).
 5. Replace `{{JWT_TOKEN}}` with your admin JWT token for authenticated requests.
 
 ---
@@ -187,6 +210,25 @@ You can test all API endpoints using the provided Postman collection.
 | Command   | Description                        |
 |-----------|------------------------------------|
 | npm start | Run server with nodemon (development) |
+
+---
+
+## 🧪 How to Test
+
+1. Import the provided Postman collection.  
+2. Replace `{{base_url}}` with your running server URL (e.g., http://localhost:3000).  
+3. Replace `{{JWT_TOKEN}}` with a valid admin token.  
+4. Test endpoints for drugs, pharmacies, and alternative medicine mappings.
+
+---
+
+
+## 🔮 Future Work
+
+- Support multiple administrators and roles with RBAC (Role-Based Access Control)  
+- Integrate with real-world pharmacy APIs for dynamic drug availability  
+- Add automated testing with Jest and Supertest  
+- Dockerize the API for containerized deployment
 
 ---
 
